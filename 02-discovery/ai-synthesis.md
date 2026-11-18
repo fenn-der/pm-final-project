@@ -9,8 +9,6 @@
 - **Did it smooth over a critical frustration into a generic bullet point?:** Not really, it summarized each point but it did group them together in the way that it was asked to.
 - **Did the AI try to suggest features or a roadmap despite the constraints?:** No. But it did provide notes at the end after completing the analysis but this is my fault because my Claude has been instructed to never assume and always identify where it might be wrong.
 - **Logic leak / hallucination #1 (e.g., “AI suggested a new search bar feature, roadmap leak”):** Claude added judgement because of the way that the prompt was phrased BUT it also flagged it to me in the notes section it created at the bottom:
-
-CLAUDE: Where I added judgment: Severities marked “as filed” come from the bug reports. Where I flagged a possible mismatch, or assigned severity to an interview-only finding (for example, commercial impact), that is my own analytical judgment, not data.
+- **CLAUDE: Where I added judgment: Severities marked “as filed” come from the bug reports. Where I flagged a possible mismatch, or assigned severity to an interview-only finding (for example, commercial impact), that is my own analytical judgment, not data.
 - **Logic leak / hallucination #2:** In the notes section at the bottom it also made a judgement about my sample size (however this can also due to the instructions that my specific Claude has): 
-
-CLAUDE: Small sample: The base is 12 interview entries (one of them a seven-person focus group) and 10 bug reports, so the themes should be read as strong qualitative signals rather than measured prevalence.
+- **CLAUDE: Small sample: The base is 12 interview entries (one of them a seven-person focus group) and 10 bug reports, so the themes should be read as strong qualitative signals rather than measured prevalence.
