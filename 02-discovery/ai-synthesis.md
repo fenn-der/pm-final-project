@@ -1,17 +1,16 @@
-# AI Synthesis — Product Health & Insights Summary
-
-> **Module 2 · Lab 1.** Repo file `02-discovery/ai-synthesis.md` — part of your submission.
-> Do the lab in the **Module 2 · Exercise 1 Guide** (linked from the Module 2 deck), then click **⬇ Download .md** — it saves as this exact file. Commit it here.
-> It feeds the **Research & Competitive Analysis** slide of your Module 6 final deck, alongside `competitive-and-journey.md`.
+# AI Synthesis, Product Health & Insights Summary (Module 2)
 
 ## Responses
+- **Moment of misery / red flag #1 (e.g., “user gave up after 3 tries”):** User has no signal on half the rural route and the stop list won’t load offline, so user faces a blank screen and screenshots route every morning as a backup. Five of seven drivers in the focus group keep a paper manifest for the same reason (UXR-06, UXR-12, BUG-2050).
+- **Moment of misery / red flag #2:** Marking a stop delivered takes a user three taps across three screens, at a doorstep in the rain with a package in one hand. User has started texting dispatcher instead of using the app to save time (UXR-01, BUG-2055).
+- **Moment of misery / red flag #3:** A dispatcher reassigns a route, but the change takes 8 to 15 minutes to reach the driver and there is no push notification. By then the driver has driven the wrong way, and the team runs a WhatsApp group as the real system (UXR-02, BUG-2044).
+- **Product Health & Insights Summary (Claude's output):** The product’s administrative and reporting capabilities remain a real strength and the main reason enterprise accounts bought it, but the daily driver experience is undermining adoption badly enough that at least one account reports renewal is at risk and another is evaluating a leaner competitor. Critical reliability failures (mid-route crashes, delayed route reassignments, no offline support) combine with a cluttered interface that buries the few core actions drivers use dozens of times a day. As a result, users across roles have built parallel off-platform systems such as WhatsApp groups, paper manifests, route screenshots, and phone calls to dispatch, so the app is no longer the operational source of truth.
+- **Did the AI catch the specific moment of misery / pain point you found in Step 1?:** Yes, the summary already caught most of them and the rest of the output dove into detail about the rest.
+- **Did it smooth over a critical frustration into a generic bullet point?:** Not really, it summarized each point but it did group them together in the way that it was asked to.
+- **Did the AI try to suggest features or a roadmap despite the constraints?:** No. But it did provide notes at the end after completing the analysis but this is my fault because my Claude has been instructed to never assume and always identify where it might be wrong.
+- **Logic leak / hallucination #1 (e.g., “AI suggested a new search bar feature, roadmap leak”):** Claude added judgement because of the way that the prompt was phrased BUT it also flagged it to me in the notes section it created at the bottom:
 
-- **Moment of misery / red flag #1:** _(not filled in)_
-- **Moment of misery / red flag #2:** _(not filled in)_
-- **Moment of misery / red flag #3:** _(not filled in)_
-- **Product Health & Insights Summary (Claude's output):** _(not filled in)_
-- **Did the AI catch the specific moment of misery / pain point you found in Step 1?:** _(not filled in)_
-- **Did it smooth over a critical frustration into a generic bullet point?:** _(not filled in)_
-- **Did the AI try to suggest features or a roadmap despite the constraints?:** _(not filled in)_
-- **Logic leak / hallucination #1:** _(not filled in)_
-- **Logic leak / hallucination #2:** _(not filled in)_
+CLAUDE: Where I added judgment: Severities marked “as filed” come from the bug reports. Where I flagged a possible mismatch, or assigned severity to an interview-only finding (for example, commercial impact), that is my own analytical judgment, not data.
+- **Logic leak / hallucination #2:** In the notes section at the bottom it also made a judgement about my sample size (however this can also due to the instructions that my specific Claude has): 
+
+CLAUDE: Small sample: The base is 12 interview entries (one of them a seven-person focus group) and 10 bug reports, so the themes should be read as strong qualitative signals rather than measured prevalence.
